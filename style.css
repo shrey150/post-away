@@ -1,0 +1,14 @@
+/*some CSS*/
+html {
+    background: whitesmoke;
+}
+.font {
+    font-family: Helvetica;
+}
+#border {
+    background: #FFFFFF;
+    border:1px solid gray;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 10px;
+}
