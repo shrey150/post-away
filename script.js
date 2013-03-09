@@ -8,6 +8,7 @@ $(document).ready(function () {
         var text = $('#messageInput').val();
         myDataRef.push({name: name, text: text});
         $('#messageInput').val('');
+        $("#nameInput").val("");
     });
     
       //retrieve messages from Firebase
