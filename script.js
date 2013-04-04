@@ -2,13 +2,28 @@ $(document).ready(function () {
     //load our Firebase
     var myDataRef = new Firebase('https://post-away.firebaseio.com/');
     
-    //submit message to Firebase
+    //set name
+    var name = $.cookie("name");
+    if (name) {
+        $("#nameInput").val(name);
+        $('#rememberMe').attr('checked','checked');
+    }
+
+    //submit message to Firebase and set cookie for name
     $('#submitMessage').click(function () {
         var name = $('#nameInput').val();
         var text = $('#messageInput').val();
+        var date = new Date();
+        date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
+        if($("#rememberMe").is(":checked")) {
+            $.cookie("name",name,{expires:date});
+        }
+        else {
+            $.removeCookie("name");
+            $("#nameInput").val("")
+        }
         myDataRef.push({name: name, text: text});
         $('#messageInput').val('');
-        $("#nameInput").val("");
     });
     
       //retrieve messages from Firebase
