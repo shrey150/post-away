@@ -1,14 +1,28 @@
 /*some CSS*/
+
 html {
-    background: whitesmoke;
+    background: #FFFF66;
 }
+
 .font {
-    font-family: Helvetica;
+    font-family: "Open Sans";
 }
+
 #border {
     background: #FFFFFF;
     border:1px solid gray;
     margin-left: 200px;
     margin-right: 200px;
     border-radius: 10px;
+}
+
+/*<textarea> and <input> placeholder style*/
+
+::-webkit-textarea-placeholder {
+    font-family: "Open Sans";
+}
+
+/*hover actions*/
+#login:hover {
+    cursor: default;
 }
