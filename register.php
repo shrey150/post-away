@@ -32,7 +32,7 @@
                                             $numrows = mysql_num_rows($query);
                                             
                                             if ($numrows == 0) {
-                                                $getpass = md5(md5("w4lkrh5kgq".$getpass."4p967iujhn"));
+                                                $getpass = md5(md5("confidential".$getpass."confidential"));
                                                 $date = date("F d, Y");
                                                 $code = md5(rand());
                                                 
