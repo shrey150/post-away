@@ -1,10 +1,7 @@
 Post Away
 =========
 
-This is a posting page (sort of social media) that uses the Firebase API and jQuery. It pushes and receives data from 
-the Firebase. It now also (thanks to jackd1) uses the jQuery Cookie Plugin.
+This is a posting page (sort of social media) that now uses PHP and MySQL. It pushes and receives data from 
+the database. It now also uses a login system.
 
-Some things I would like to be done:
-
-
-1. I was thinking our graphics designer ("Os") could work on a logo.
+Check it out at post-away.tk or shrey150.koding.com/post-away/index.php or shrey150.kd.io/old.koding.com/post-away/index.php
