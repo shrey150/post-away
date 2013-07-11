@@ -16,7 +16,7 @@
         <?php
         
         if ($username) {
-            echo "You are already logged in. <a href='user_panel.php'>Main Page</a>";
+            header("Location: http://www.post-away.tk");
         } else {
             $form="
             <form action='login.php' method='POST'>
@@ -49,7 +49,7 @@
                 if ($user) {
                     if ($password) {
                        require("connect.php");
-                       $password = md5(md5("w4lkrh5kgq".$password."4p967iujhn"));
+                       $password = md5(md5("confidential".$password."confidental"));
                        $query = mysql_query("SELECT * FROM users WHERE username='$user'");
                        $numrows = mysql_num_rows($query);
                     
