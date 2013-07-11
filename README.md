@@ -1,4 +1,4 @@
-Post Away
+Post Away 3.0
 =========
 
 This is a posting page (sort of social media) that now uses PHP and MySQL. It pushes and receives data from 
