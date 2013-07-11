@@ -6,4 +6,4 @@ the database. It now also uses a login system.
 
 Check it out at: http://www.post-away.tk or http://shrey150.koding.com/post-away/index.php.
 
- **Notice: One file (connect.php) has not been included due to my personal password and hackers gaining access to the database.**
+ **Notice: Certain code or files have not been included due to security risk.**
